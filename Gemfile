@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -59,3 +59,4 @@ gem 'net-smtp'
 # ついでに以下の2つも追加しておく方が良さそう
 gem 'net-imap'
 gem 'net-pop'
+gem 'dotenv-rails'
