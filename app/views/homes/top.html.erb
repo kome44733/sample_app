@@ -1,2 +1,17 @@
 <h1>Homes#top</h1>
 <p>Find me in app/views/homes/top.html.erb</p>
+
+<div id="gmap"></div>
+<script>
+var map;
+function initMap() {
+  var target = document.getElementById('gmap');
+  var empire = {lat: 40.748441, lng: -73.985664};
+  //Empire State Bldg の緯度（latitude）と経度（longitude）
+  map = new google.maps.Map(target, {
+    center: empire,
+    zoom: 14
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyDQXVX9r-gwj4UE7rxfIBg38RF2bvzTsIE&callback=initMap" async defer></script><!-- API_KEYの部分は取得した APIキーで置き換えます -->

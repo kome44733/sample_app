@@ -9,6 +9,12 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <style>
+    #gmap {
+      height: 400px;
+      width: 600px;
+    }
+    </style>
   </head>
 
   <body>
@@ -18,7 +24,7 @@
     <nav>
       <ul class="nav-list">
         <li class="nav-list-item">
-          <%= link_to "Top", top_path %>
+          <%= link_to "Top", root_path %>
         </li>
         <li class="nav-list-item">
           <%= link_to "Lists", lists_path %>
